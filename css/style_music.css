@@ -2,12 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 
-html body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+/* body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-content: center;
+    overflow-y: scroll;
+} */
 
 .skip a{
     background: white;
@@ -27,10 +29,13 @@ html body {
 }
 
 #top_nav {
+    grid-column: 1 / -1;
+    grid-row: 1 / auto;
     text-align: center;
     width: 100%;
     min-height: 60px;
     background-color: black;
+    z-index: 100;
 }
 
 header img {
@@ -42,7 +47,7 @@ header img {
     padding: 20px 0;
     background-color: black;
     color: #ffffff;
-    font-family: Forum, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
 }
@@ -51,7 +56,7 @@ header img {
     padding: 0 15px;
     justify-content: center;
     align-items: center;
-    font-family: Forum, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
     color: #ffffff;
@@ -68,33 +73,43 @@ a#nav_active {
     color: white;
 }
 
-#main {
-    position: relative;
-    top: 80px;
-    bottom: 20px;
-    width: 100%;
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
 }
 
-/* .h1_collection {
-    position: absolute;
+main {
+    grid-column: 1 / -1;
+    grid-row: 2 / auto;
+    position: relative;
+    top: 0px;
+    bottom: 20px;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+}
+
+.h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 30px;
-    background-color: black;
-    font-family: Forum, sans-serif;
+    background-color: #000000;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     color: #ffffff;
     margin: 10px 0 0 20px;
-} */
+}
 
 .main_container {
-    display: grid;
     position: absolute;
-    /* margin-top: 60px; */
+    margin-top: 30px;
     margin-bottom: 20px;
     width: 100%;
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(9, auto);
     grid-row-gap: 30px;
@@ -201,15 +216,26 @@ h3 {
     letter-spacing: 0.5px;
 }
 
+aside{
+    grid-column: 1 / -1;
+    grid-row: 3 / auto;
+    font-family: Roboto, sans-serif;
+    font-size: 9px;
+    color: gray;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
 
 footer {
+    grid-column: 1 / -1;
+    grid-row: 4 / auto;
     width: 100%;
     color: #ffffff;
     background-color: black;
-    font-family: Forum, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 9px;
     text-align: center;
-    position:fixed;
     bottom: 0px;
     z-index: 1;
     padding: 5px;
@@ -254,7 +280,7 @@ footer {
         padding-right: 25px;
         justify-content: center;
         align-items: center;
-        font-family: Forum, sans-serif;
+        font-family: Montserrat, sans-serif;
         font-size: 18px;
         text-decoration: none;
         color: #ffffff;
