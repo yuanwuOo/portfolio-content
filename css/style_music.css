@@ -59,7 +59,7 @@ header img {
 }
 
 a#nav_active {
-    background-color: black;
+    background-color: gray;
     color: white;
     text-decoration:underline;
 }
@@ -95,17 +95,13 @@ main {
 }
 
 .main_container {
-    position: absolute;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(9, auto);
-    grid-row-gap: 30px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-content: center;
-    overflow-y: scroll;
 }
 
 .collection_container {
@@ -115,6 +111,7 @@ main {
     width: 100%;
     height: auto;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .collection_h2 {
@@ -157,7 +154,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -238,16 +235,13 @@ footer {
         grid-column: 1 / -1;
         grid-row: 1 / auto;
         text-align: center;
-        width: 100%;
         height: 100px;
         display: flex;
-        background-color: black;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        z-index: 100;
     }
 
     header img {
@@ -298,8 +292,7 @@ footer {
     #main {
         top: 50px;
         bottom: 100px;
-        font-size: 11px;
-        width: 100%;
+        font-size: 13px;
     }
 
     .container {
@@ -315,11 +308,14 @@ footer {
     }
 
     .main_container {
-        margin-top: 50px;
+        margin-top: 60px;
         margin-bottom: 40px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-gap: 50px 0;
+        flex-direction: row;
+    }
+
+    .collection_container {
+        width: 49%;
+        margin-bottom: 60px;
     }
 
     .collection_h2 {
@@ -330,22 +326,6 @@ footer {
 
     .collection_h2 p{
         font-size: 14px;
-    }
-
-    .flip-card-inner {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
-
-    .collection_img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     h3 {
@@ -361,7 +341,6 @@ footer {
     }
 
     footer {
-        width: 100%;
         font-size: 12px;
         padding: 15px;
     }
@@ -369,13 +348,6 @@ footer {
 }
 
 @media screen and (min-width: 1200px){
-
-    #nav_links {
-        display:flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
 
     #nav_links a {
         padding-left: 60px;
@@ -386,7 +358,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.9fr 39fr 1.8fr 0.3fr;
+        grid-template-rows: 0.9fr 38fr 1.8fr 0.3fr;
     }
 
     #main {
@@ -403,12 +375,13 @@ footer {
     }
 
     .main_container {
-        margin-top: 100px;
-        margin-bottom: 20px;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-gap: 100px 0;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+
+    .collection_container {
+        width: 33%;
+        margin-bottom: 80px;
     }
 
     .collection_h2 {
@@ -442,7 +415,6 @@ footer {
 
     .flip-card-back p {
         font-size: 14px;
-        line-height: 1.5;
         letter-spacing: 0.6px;
     }
 

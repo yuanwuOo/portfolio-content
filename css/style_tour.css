@@ -64,7 +64,7 @@ header img {
 }
 
 a#nav_active {
-    background-color: black;
+    background-color: gray;
     color: white;
     text-decoration:underline;
 }
@@ -165,16 +165,13 @@ footer {
 
     #top_nav {
         top: 0;
-        width: 100%;
         height: 100px;
         display: flex;
-        background-color: black;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        z-index: 100;
     }
 
     header img {
@@ -209,11 +206,6 @@ footer {
         text-decoration: none;
         color: #ffffff;
         background-color:  black;
-    }
-
-    #nav_links a:hover {
-        background-color: gray;
-        text-decoration:underline;
     }
 
     a#nav_active {
@@ -267,21 +259,12 @@ footer {
     }
 
     footer {
-        width: 100%;
         font-size: 12px;
         padding: 15px;
     }
 }
 
 @media screen and (min-width: 1200px){
-
-    #nav_links {
-        display:flex;
-        text-align: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
 
     #nav_links a {
         padding-left: 60px;
@@ -304,11 +287,6 @@ footer {
     .main_container {
         margin-top: 80px;
         margin-bottom: 80px;
-    }
-
-    .article_container {
-        height: auto;
-        margin-bottom: 30px;
     }
 
     .tour_h2 {
@@ -342,19 +320,8 @@ footer {
         font-size: 24px;
     }
 
-    .main_container {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-
-    .article_container {
-        height: auto;
-        margin-bottom: 30px;
-    }
-
     .tour_h2 {
         font-size: 30px;
-        letter-spacing: 1px;
     }
 
     .img_style {
@@ -370,10 +337,6 @@ footer {
         font-size: 24px;
         line-height: 1.8;
         letter-spacing: 1px;
-    }
-
-    footer {
-        font-size: 16px;
     }
 }
 
