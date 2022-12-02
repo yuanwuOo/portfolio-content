@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Montserrat, sans-serif;
+}
+
 .skip a{
     background: white;
     left: 10px;
@@ -41,7 +45,6 @@ header img {
     padding: 20px 0;
     background-color: black;
     color: #ffffff;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
 }
@@ -50,7 +53,6 @@ header img {
     padding: 0 15px;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
     color: #ffffff;
@@ -58,13 +60,13 @@ header img {
 }
 
 #nav_links a:hover {
-    background-color: gray;
+    background-color: #757575;
     color: #000000;
     text-decoration:underline;
 }
 
 a#nav_active {
-    background-color: gray;
+    background-color: #757575;
     color: white;
     text-decoration:underline;
 }
@@ -74,7 +76,6 @@ main {
     top: 0px;
     bottom: 20px;
     width: 100%;
-    font-family: Roboto, sans-serif;
     font-size: 11px;
 }
 
@@ -84,11 +85,13 @@ main {
     align-items: center;
     width: 100px;
     height: 30px;
-    background-color: #000000;
-    font-family: Montserrat, sans-serif;
+    background-color: #B5B5B5;
     font-size: 14px;
-    color: #ffffff;
+    color: black;
     margin: 10px 0 0 20px;
+    -webkit-animation: myfirst 5s ;
+    animation: myfirst 5s ;
+    animation-iteration-count: 1;
 }
 
 .header_home {
@@ -101,7 +104,7 @@ main {
     flex-direction: column;
 }
 
-.cover {
+/* .cover {
     align-self: center;
     display: flex;
     justify-content: center;
@@ -110,14 +113,13 @@ main {
     width: 80%;
     height: 60%;
     background-color: rgba(161, 161, 161, 0.5);
-    font-family: Montserrat, sans-serif;
     font-size: 32px;
     color: #000000;
     margin: 10px;
     -webkit-animation: myfirst 5s ;
     animation: myfirst 5s ;
     animation-iteration-count: 1;
-}
+} */
 
 @-webkit-keyframes myfirst {
     from {opacity: 0;}
@@ -149,7 +151,6 @@ main {
 .section_header_home {
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, sans-serif;
     font-size: 16px;
     color: #ffffff;
     width: 80%;
@@ -256,7 +257,6 @@ main {
 }
 
 form {
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     width: 60%;
 }
@@ -276,13 +276,13 @@ label{
 }
 
 input, textarea {
-    font-family: Montserrat, sans-serif;
     width: 100%;
     padding: 10px 5px;
     margin: 5px 0 20px 0;
     border: 1px solid #000000;
     border-radius: 5px;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
 }
 
 *:focus {
@@ -311,7 +311,6 @@ footer {
     width: 100%;
     color: #ffffff;
     background-color: black;
-    font-family: Montserrat, sans-serif;
     font-size: 9px;
     text-align: center;
     position:fixed;
@@ -320,7 +319,7 @@ footer {
     padding: 5px;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 700px){
     #top_nav {
         height: 100px;
         display: flex;
@@ -358,7 +357,6 @@ footer {
         padding-right: 25px;
         justify-content: center;
         align-items: center;
-        font-family: Montserrat, sans-serif;
         font-size: 18px;
         text-decoration: none;
         color: #ffffff;
@@ -366,12 +364,12 @@ footer {
     }
 
     #nav_links a:hover {
-        background-color: gray;
+        background-color: #757575;
         text-decoration:underline;
     }
 
     a#nav_active {
-        background-color: gray;
+        background-color: #757575;
         color: white;
         text-decoration:underline;
     }
@@ -455,7 +453,7 @@ footer {
     }
 
     .learn_more_button {
-        width: 80px;
+        width: 100px;
         height: 16px;
         border-radius:4px;
         border: 0.5px solid #000000;;
@@ -578,7 +576,7 @@ footer {
     }
 
     .learn_more_button {
-        width: 100px;
+        width: 120px;
         height: 20px;
         border-radius: 5px;
         border: 0.75px solid #000000;
