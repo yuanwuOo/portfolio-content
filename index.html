@@ -38,7 +38,10 @@
 
         <div class = "header_home">
             <h1 class = "h1">방탄소년단</h1>
-            <!-- <div class = "cover">BTS</div> -->
+            <audio controls playsinline autoplay loop class = "bgm">
+                <source src="media/dynamite.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
 
         <div class = "main_container">
@@ -62,7 +65,7 @@
                             <li><h3 class = "sub_header_home">October 17</h3></li>
                             <li>BTS announces upcoming Korean military service</li>
                             <li>
-                                <a class = "learn_more_button" href = "https://www.billboard.com/video/bts-jin-scores-first-solo-entry-with-the-astronaut-billboard-news/">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                <a class = "learn_more_button" href = "https://www.npr.org/2022/10/17/1129429178/bts-announces-upcoming-korean-military-service">Learn More <i class="fa-solid fa-angle-right"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -71,17 +74,36 @@
                 <div class ='form_overall_container'>
                     <form action="https://formspree.io/f/xbjbvkbl" method="POST">
                         <fieldset>
-                            <legend>Contact</legend>
+                            <legend>Sign Up to Receive Updates</legend>
+
+                            <div class="form_header">
+                                <p>
+                                    Sign up to recieve email updates on news, annoncements, special offers, promotions sales, and more.
+                                    <br>
+                                    <br>
+                                    You can sign up for our mailing list here:
+                                    <br>
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
 
                             <div class="form_container">
                                 <label for="name">Your Name</label>
                                 <input type="text" placeholder="Enter Your Name" name="name" id="name"><br>
 
-                                <label for="email">Your Email</label>
+                                <label for="email">Your Email *</label>
                                 <input type = "email" id="email" placeholder="Enter Your Email" name="email"><br>
 
-                                <label for='msg'>Leave A Message</label>
-                                <textarea placeholder="Enter your message" id='msg' name="message"></textarea><br>
+                                <!-- <label for='msg'>Leave A Message</label>
+                                <textarea placeholder="Enter your message" id='msg' name="message"></textarea><br> -->
+
+                                <aside>
+                                    <p>By providing this information, you are opting to receive emails from BTS with news, special offers, promotions and messages tailored to your interests. By clicking below to submit this form, you acknowledge that the information you provide will be processed in accordance with our Privacy Policy and Terms of Use. 
+                                        <br>
+                                        <br>
+                                        Fields marked with an asterisk (*) are required. You will receive an email to confirm your subscription to the above mailing list. You can always unsubscribe from our mailing list, by clicking on the Unsubscribe link in the email you received.</p>
+                                </aside>
 
                                 <input type="submit" value="Sumbit"></input>
                             </div>

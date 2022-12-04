@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Montserrat, sans-serif;
+}
+
 .skip a{
     background: white;
     left: 10px;
@@ -36,7 +40,6 @@ header img {
     padding: 20px 0;
     background-color: black;
     color: #ffffff;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
 }
@@ -45,7 +48,6 @@ header img {
     padding: 0 15px;
     justify-content: center;
     align-items: center;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     text-decoration: none;
     color: #ffffff;
@@ -53,13 +55,13 @@ header img {
 }
 
 #nav_links a:hover {
-    background-color: gray;
+    background-color: #757575;
     color: #000000;
     text-decoration:underline;
 }
 
 a#nav_active {
-    background-color: gray;
+    background-color: #757575;
     color: white;
     text-decoration:underline;
 }
@@ -77,7 +79,6 @@ main {
     top: 0px;
     bottom: 20px;
     width: 100%;
-    font-family: Roboto, sans-serif;
     font-size: 11px;
 }
 
@@ -88,7 +89,6 @@ main {
     width: 100px;
     height: 30px;
     background-color: #000000;
-    font-family: Montserrat, sans-serif;
     font-size: 14px;
     color: #ffffff;
     margin: 10px 0 0 20px;
@@ -120,7 +120,6 @@ main {
 }
 
 .collection_h2 p{
-    font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 12px;
     color: black;
@@ -189,7 +188,6 @@ main {
 }
 
 h3 {
-    font-family: Roboto, sans-serif;
     font-size: 12px;
     font-weight: bolder;
     line-height: 1.5;
@@ -197,7 +195,6 @@ h3 {
 }
 
 .flip-card-back p {
-    font-family: Roboto, sans-serif;
     font-size: 11px;
     line-height: 1.5;
     letter-spacing: 0.5px;
@@ -206,9 +203,8 @@ h3 {
 aside{
     grid-column: 1 / -1;
     grid-row: 3 / auto;
-    font-family: Roboto, sans-serif;
     font-size: 9px;
-    color: gray;
+    color: #757575;
     line-height: 1.2;
     letter-spacing: 0.5px;
     align-items: center;
@@ -220,7 +216,6 @@ footer {
     width: 100%;
     color: #ffffff;
     background-color: black;
-    font-family: Montserrat, sans-serif;
     font-size: 9px;
     text-align: center;
     bottom: 0px;
@@ -229,7 +224,7 @@ footer {
 }
 
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 700px){
 
     #top_nav {
         grid-column: 1 / -1;
@@ -271,7 +266,6 @@ footer {
         padding-right: 25px;
         justify-content: center;
         align-items: center;
-        font-family: Montserrat, sans-serif;
         font-size: 18px;
         text-decoration: none;
         color: #ffffff;
@@ -279,12 +273,12 @@ footer {
     }
 
     #nav_links a:hover {
-        background-color: gray;
+        background-color: #757575;
         text-decoration:underline;
     }
 
     a#nav_active {
-        background-color: gray;
+        background-color: #757575;
         color: white;
         text-decoration:underline;
     }
@@ -432,7 +426,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.9fr 44fr 1fr 0.3fr;
+        grid-template-rows: 0.9fr 33fr 1fr 0.3fr;
     }
 
     #main {
